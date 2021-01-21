@@ -4,12 +4,15 @@ function SearchForm() {
     return (
         <>
             <Form>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-</Form.Text>
+                <Form.Group>
+                    <Form.Label>Search </Form.Label>
+                    <Form.Control 
+                    type="text" 
+                    placeholder="Search for a book" 
+                    id="search" 
+                    onChange={props.handleInputChange}
+                    value={props.search}
+                    name="search" />
                 </Form.Group>
             </Form>
         </>

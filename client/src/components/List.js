@@ -1,14 +1,13 @@
 import React from "react"
-import { ListGroup } from "react-bootstrap"
 
-function List(){
+
+function List({ children }) {
     return (
-        <>
-<ListGroup>
-  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-</ListGroup>
-        </>
-    )
+        <div className="list-overflow-container">
+            <ul className="list-group">{children}</ul>
+        </div>
+    );
 };
 
-export default List;
+export default List
+
